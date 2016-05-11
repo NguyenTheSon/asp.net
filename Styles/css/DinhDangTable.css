@@ -1,0 +1,11 @@
+﻿body {
+}
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}

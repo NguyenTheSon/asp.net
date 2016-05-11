@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Hocsinh.master.cs" Inherits="Hocsinh" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Học sinh</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="../Images/icon_diploma.png" type="image/x-icon" />    
+    <script src="../Styles/js/jquery.js" type="text/javascript"></script>
+    <script src="../Styles/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../Styles/js/thietkewebphp.net.snow.js" type="text/javascript"></script>
+    <link href="../Styles/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/css/stylesHocsinh.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 2000
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="Form1" runat="server">
+<div class="containner">
+    <div class="header">
+        <div class="logo">
+            <a href="Default.aspx"></a>
+        </div> 
+        <div class="text">
+            <a href="Default.aspx"><span class="text1">Sở GD & ĐT Vĩnh Phúc</span></a><br />
+            <a href="Default.aspx"><span class="text2">Trường THPT Bình Sơn</span></a>
+        </div>
+        <div class="images">
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="menu">
+        <ul>
+            <li><a href="Default.aspx">Trang chủ</a></li>
+            <li class="line"></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li class="line"></li>
+            <li><a href="#">Tin tức</a></li>
+            <li class="line"></li>
+            <li><a href="#">Tra cứu thông tin</a>   
+            </li>
+            <li class="line"></li>
+            <li><a href="LichHoc.aspx">Lịch học</a></li>
+            <li class="line"></li>
+            <li><a href="../Dangnhap.aspx">Đăng xuất</a></li>
+        </ul>
+    </div>
+
+    <div class="submenu1" id="tabs2">
+        <div id="sub_Time">
+        </div>
+        <div id="main">
+            <div class="date">
+                <asp:Label ID="lbltime" runat="server"></asp:Label>
+            </div>
+        </div>
+   </div>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="../Images/1.jpg" alt="IMG" />
+    </div>
+    <div class="item">
+      <img src="../Images/IMG_3457.jpg" alt="IMG" />
+    </div>
+    <div class="item">
+      <img src="../Images/1.jpg" alt="IMG" />
+    </div>
+  </div>
+
+  <!-- Controls 
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>-->
+</div>
+
+<div class="clear"></div>
+<div class="content">
+    <div class="left">
+        <div class="box">
+            <div class="headbox">
+                <div class="ico"></div>
+                <div class="headtext">Tra cứu thông tin</div>
+            </div>
+            <div class="text">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder> 
+            </div>
+        </div>
+        <div class="box">
+            <div class="headbox">
+                <div class="ico"></div>
+                <div class="headtext">Tin tức</div>
+            </div>
+            <div class="text12">
+                Trường Đại học Công nghiệp Hà Nội tập huấn công tác “Tự đánh giá Chất lượng giáo dục Đại học” năm 2015  Tin tức mới
+Thực hiện Kế hoạch Tự đánh giá năm 2013, trong 2 ngày 03 và 04 tháng 12 năm 2015, Trường Đại học Công nghiệp Hà Nội đã tổ chức tập huấn công tác “Tự đánh giá Chất lượng giáo dục Đại học”
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right-box">        
+            <div class="toptext">
+                <div class="glyphicon glyphicon-volume-down"></div>
+                <div class="text-top">Thông báo</div>
+            </div>
+            <div class="text-content">
+                <asp:DataList ID="DataList1" runat="server">
+                    <ItemTemplate>
+                        <a href="Thongbao.aspx?matb=<%# Eval("MaTB") %>"><span class="glyphicon glyphicon-pushpin"></span> <asp:Label ID="Label1" runat="server" Text='<%# Bind("TenTB") %>'></asp:Label></a>
+                    </ItemTemplate>                    
+                </asp:DataList>
+            </div>
+        </div>        
+    </div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+    <p><span class="glyphicon glyphicon-flag" ></span> Website Quản Lý Hồ Sơ THPT<br/>
+    <span class="glyphicon glyphicon-star-empty" ></span> Design by: Nguyễn Thế Sơn<span class="glyphicon glyphicon-star-empty" ></span><br/>
+    <span class="glyphicon glyphicon-tree-conifer" ></span> HTTT1 - K7 <span class="glyphicon glyphicon-tree-conifer" ></span>
+    </p>
+</div>
+</div>
+    </form>
+</body>
+</html>
+

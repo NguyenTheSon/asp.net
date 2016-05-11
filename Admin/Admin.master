@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Admin</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="../Images/icon_diploma.png" type="image/x-icon" />
+    <link href="../Styles/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="../Styles/js/jquery.js" type="text/javascript"></script>
+    <script src="../Styles/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--<script src="../Styles/js/thietkewebphp.net.snow.js" type="text/javascript"></script>-->
+    <link href="../Styles/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form id="Form1" class="form-horizontal" runat="server">
+<div class="containner">
+    <div class="header">
+        <div class="logo">
+            <a href="Default.aspx"></a>
+        </div> 
+        <div class="text">
+            <a href="Default.aspx"><span class="text1">Sở GD & ĐT Vĩnh Phúc</span></a><br />
+            <a href="Default.aspx"><span class="text2">Trường THPT Bình Sơn</span></a>
+        </div>
+        <div class="images">
+            <a href="Default.aspx"></a>
+        </div>
+    </div>
+    <div class="clear"></div>    
+    <div class="line-style"></div>
+    <div class="clear"></div>  
+    <div class="content">
+        <div class="menungang">
+        <ul>
+            <li>
+                <img src="../icon/Home2.png" alt="IMG" />
+                <asp:Button ID="Button1" runat="server" Text="Trang chính" PostBackUrl="~/Admin/Default.aspx" CssClass="btn" />
+            </li>
+            <li class="line"></li>
+            <li>
+                <asp:Button ID="Button2" runat="server" Text="Chọn năm học" CssClass="btn" />
+            </li>
+            <li class="line"></li>
+            <li>
+                <asp:Button ID="Button3" runat="server" Text="Đổi mật khẩu" CssClass="btn" />
+            </li>
+            <li class="line"></li>
+            <li>
+                <asp:Button ID="btnThoat" runat="server" Text="Đăng xuất" CssClass="btn" 
+                    onclick="btnThoat_Click" />
+            </li>
+            <li class="line"></li>
+            <li>
+                <span class="label">Kỳ II năm học 2015- 2016</span>
+            </li>
+            <li class="line"></li>
+            <li>
+               <span class="label">Chào Admin</span> 
+            </li>
+        </ul>
+    </div>
+        <div class="line-style1"></div>
+        <div class="clear"></div>  
+        <div class="menu">
+                <div class="box">
+                    <div class="headtext"><img src="../icon/Resources_resource_wherewithal.png" style="float: left; padding-top: 5px; padding-left: 5px;" alt="IMG"/>&nbsp;&nbsp; 1. Danh mục  <img src="../icon/insert-object.png" style="float: right; padding-top: 5px; padding-right: 5px;" alt="IMG"/>
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li><a href="MonHoc.aspx">1.1 Danh mục môn học</a></li>
+                            <li><a href="ThongBao.aspx">1.2 Quản lý thông báo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="headtext"><img src="../icon/shopping-08-24.png" style="float: left; padding-top: 5px; padding-left: 5px;" alt="IMG"/>&nbsp;&nbsp; 2. Khai báo đầu kì  <img src="../icon/insert-object.png" style="float: right; padding-top: 5px; padding-right: 5px;" alt="IMG"/>
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li><a href="ThongTinLopHoc.aspx">2.1 Quản lý danh mục lớp học</a></li>
+                            <li><a href="Giaovien.aspx">2.2 Quản lý hồ sơ giáo viên</a></li>
+                            <li><a href="HocSinh.aspx">2.3 Quản lý hồ sơ học sinh</a></li>                            
+                            <li><a href="PhanGVCN.aspx">2.4 Phân giáo viên chủ nghiệm</a></li>
+                            <li><a href="LapLichHoc.aspx">2.5 Lập lịch học</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="headtext"><img src="../icon/shopping-08-24.png" style="float: left; padding-top: 5px; padding-left: 5px;" alt="IMG"/>&nbsp;&nbsp; 3. Tra cứu <img src="../icon/insert-object.png" style="float: right; padding-top: 5px; padding-right: 5px;" alt="IMG"/>
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li><a href="LopHoc.aspx">3.1 Danh sách học sinh các lớp </a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>  
+        <div class="right">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <p><span class="glyphicon glyphicon-flag" ></span> Website Quản lý Hồ Sơ THPT<br/>
+        <span class="glyphicon glyphicon-star-empty" ></span> Design by: Nguyễn Thế Sơn <span class="glyphicon glyphicon-star-empty" ></span><br/>
+        <span class="glyphicon glyphicon-tree-conifer" ></span> HTTT1 - K7 <span class="glyphicon glyphicon-tree-conifer" ></span>
+        </p>
+    </div>
+</div>
+</form>
+</body>
+</html>

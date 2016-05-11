@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GiaoVienMaster2.master.cs" Inherits="GiaoVien_GiaoVienMaster2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Styles/css/StyleGiaoVien2.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style4 {
+            padding: 5px 10px 10px 10px;
+            width: 100%;
+            height: 68px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="containner">
+            <div class="header">
+                <div class="logo">
+                    <a href="#"></a>
+                </div>
+                <div class="text">
+                    <a href="#"><span class="text1">Sở GD & ĐT Vĩnh Phúc</span></a><br />
+                    <a href="#"><span class="text2">Trường THPT Bình Sơn</span></a>
+                </div>
+                <div class="images">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Tin tức</a></li>
+                   <!-- <li class="line"></li>
+                    <li><a href="#">Tra cứu thông tin</a>
+                        <ul>
+                            <li><a href="#">Xem danh sách lớp dạy</a></li>
+                            <li><a href="#">Xem danh sách các môn dạy</a></li>
+                            <li><a href="#">Xem danh sách lớp</a></li>
+                         </ul>
+                    </li>-->
+                    <li class="line"></li>
+                    <li><a href="DanhSachLopNhapDiem.aspx">Nhập điểm</a>
+                       
+                    </li>
+                    <!--<li class="line"></li>
+                    <li><a href="#">Liên hệ</a></li>-->
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="submenu" id="tabs2">
+                <div id="sub_Time">
+                </div>
+                <div id="main">
+                    <div class="date">
+                        <asp:Label ID="lbltime" runat="server"></asp:Label>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="content">
+                <div class="left">
+                        <div class="headbox">
+                            <div class="ico"></div>
+                            <div class="headtext">Tra cứu thông tin lớp học</div>
+                        </div>
+                     <div class="clear"></div>
+                        <div class="text">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                
+                            </asp:ContentPlaceHolder>
+                        </div>
+                </div>
+              
+                <div class="clear"></div>
+                <div class="footer">
+                    <p>
+                        <span class="glyphicon glyphicon-flag"></span>Website Quản lý Hồ Sơ THPT<br />
+                        <span class="glyphicon glyphicon-star-empty"></span>Design by: Nguyễn Thế Sơn <span class="glyphicon glyphicon-star-empty"></span>
+                        <br />
+                        <span class="glyphicon glyphicon-tree-conifer"></span>HTTT1 - K7 <span class="glyphicon glyphicon-tree-conifer"></span>
+                    </p>
+                </div>
+            </div>
+             </div>
+    </form>
+</body>
+</html>

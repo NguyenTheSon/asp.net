@@ -1,0 +1,249 @@
+﻿body 
+{
+    padding: 0;
+    margin: 0;
+    background-image: url("../../Images/Website-Background.jpg");
+    background-repeat: no-repeat;
+}
+.containner
+{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background: #c1ecf9;
+}
+/*--------------Header--------------*/
+.header
+{
+    background-image: url("../../Images/bgbanner.png");
+    width: 100%;
+    height: 130px;
+    background-repeat: repeat;
+}
+.header .logo
+{
+    width: 150px;
+    height:130px;
+    float: left;
+    background-image: url("../../Images/Logo.png"); 
+    background-repeat: no-repeat;
+    background-position: 30px 20px;
+}
+
+
+.header .images
+{
+    width: 359px;
+    height: 124px;
+    float: right;
+    background-image: url("../../Images/pickk.png");
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    margin-top: 2px;
+} 
+.header .text
+{
+    float: left;
+    padding-left: 70px;
+    padding-top: 40px;
+    text-align: center
+}
+.header .text1
+{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #023EB6;
+    font-size: 15pt;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+.header .text2
+{
+    font-family: Arial;
+    font-size: 18pt;
+    font-weight: bold;
+    padding-left: 1px;
+    text-align: center;
+    color: #FF0000;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+/*--------------Header--------------*/
+
+.clear
+{
+    clear: both;
+}
+/*--------------Menu Ngang--------------*/
+.menungang
+{
+    width: 100%;
+    height: 50px;
+    background: #0099ff;
+    /*position: relative;*/
+}
+.menungang img
+{
+    width: 23px;
+    height: 24px;
+    margin-top: 15px;
+    margin-right: 10px;
+    
+}
+.menungang .btn
+{
+    margin-top: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 13px;
+    padding-left: 13px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 10px 10px 10px 10px;
+
+}
+.menungang ul li.line {
+    width: 2px;
+    background: url("../../Images/navi.gif") no-repeat 0px 20px;
+    height: 50px;
+}
+.menungang ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0 0 0 20px;
+}
+.menungang ul li
+{
+    float: left;
+    margin: 0 20px 0 0;
+}
+.label 
+{
+    line-height: 50px; 
+    font-size: 14px;
+    color: #fff;
+}
+/*--------------End Menu Ngang--------------*/
+/*--------------End Menu Doc--------------*/
+.menu
+{
+  float: left;
+  width: 20%;
+  height: auto;
+}
+
+.menu .box
+{
+    margin-top: 10px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    
+}
+.box .headtext
+{
+    line-height: 30px;
+    height: 30px;
+    color: #fff;
+    background: #0066cc;
+}
+.box .text
+{
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow:4px 4px 4px -4px #000;
+    height: auto;
+    min-height: 20px;
+}
+.text ul
+{
+    margin: 0;
+    padding: 0;
+}
+.text ul li
+{
+    list-style: none;
+    padding: 5px 10px;
+    margin: 0;
+}
+.text a:hover ,.text a:link
+{    	
+    color: #000;
+	text-decoration: none;
+}
+
+/*--------------End Menu Doc--------------*/
+/*------------------Line----------------*/
+.line-style
+{
+    height:5px;
+    width: 100%;
+    background: #e8ecf6;
+}
+.line-style1
+{
+    height:10px;
+    width: 100%;
+    background: #e8ecf6;
+}
+/*------------------Line----------------*/
+/*--------------Right--------------*/
+.right
+{
+    
+    float: left;
+    width: 80%;
+}
+.right .right-nd
+{
+    width: 98%;
+    background: #fff;
+    margin-top: -20px;
+    padding-right: 5px;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow:4px 4px 4px -4px #000;
+}
+.right-nd .text1
+{
+    padding-top: 10px;
+    margin: 0 20px 0 20px;    
+}
+.toptext span
+{
+    font-size: 18px;
+    font-family: inherit;
+    margin-top: 10px;
+    color: inherit;
+}
+.toptext
+{
+    padding-bottom: 5px;
+}
+/*--------------End Right--------------*/
+
+/*--------------Footer--------------*/
+.footer
+{
+    text-align: center;
+    height: 60px;
+    background: #0066cc;
+}
+.footer p
+{
+    border: 0px none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+.glyphicon-flag
+{
+    color: Red;
+}

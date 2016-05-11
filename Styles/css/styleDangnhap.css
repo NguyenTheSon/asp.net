@@ -1,0 +1,73 @@
+﻿body 
+{
+    padding: 0;
+    margin: 0;
+}
+.wapper
+{
+    width: 100%;
+    background: #ffffff;    
+}
+.header
+{
+     height: 50px;
+     background: #0066cc;
+}
+.pic img
+{
+    float: left;
+    padding-top: 5px;
+    height: 39px;
+    width: 81px;
+}
+.linelogo
+{
+    float: left;
+    padding: 10px 10px;
+}
+.header .text
+{
+    float: left;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight:bold;
+    
+    
+}
+.clear
+{
+    clear: both;
+}
+.content
+{
+    width: 960px;
+    background: #ffffff;
+    height: auto;
+    margin: 0 auto;
+}
+.content .pic-1
+{
+    width: 400px;
+    float: left;
+    padding: 40px 0;
+}
+.content .pic-1 img
+{
+    width: 400px;
+    height: 450px;
+}
+.content .form
+{
+    padding: 60px 0 0 40px;
+    width: 520px;    
+    float: left;
+    
+}
+.footer
+{
+    height: 62px;
+    background: #0066cc;
+    color: #fff;
+    text-align: center;
+    line-height: 62px;
+}
